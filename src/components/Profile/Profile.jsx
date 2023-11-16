@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+import { AiFillLike } from 'react-icons/ai';
+import { RiUserFollowFill } from 'react-icons/ri';
+import { MdReviews } from 'react-icons/md';
 import css from 'components/Profile/Profile.module.css';
 
 export const Profile = (props) => {
@@ -20,14 +23,17 @@ export const Profile = (props) => {
 
       <ul className={css.stats}>
         <li className={css.box}>
+          <RiUserFollowFill />
           <span className={css.label}>Followers</span>
           <span className={css.quantity}>{followers}</span>
         </li>
         <li className={css.box}>
+          <MdReviews />
           <span className={css.label}>Views</span>
           <span className={css.quantity}>{views}</span>
         </li>
         <li className={css.box}>
+          <AiFillLike />
           <span className={css.label}>Likes</span>
           <span className={css.quantity}>{likes}</span>
         </li>

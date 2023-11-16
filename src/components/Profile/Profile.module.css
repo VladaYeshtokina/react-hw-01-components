@@ -1,8 +1,7 @@
-.profile {
- 
+.profile { 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: 30px auto 30px;
+  margin: 30px auto;
   padding: 10px;
   text-align: center;
 }
@@ -27,25 +26,22 @@ width: 100px;
 height:  100px;
 }
 
-ul {
-list-style: none;
-}
-
 .stats {
   margin: auto;
   padding: 0;
 	display: flex;
+	list-style: none;
 }
 	.box {
 		box-sizing: border-box;
 		width: 100px;
-		height: 50px;		
+		height: auto;		
 		text-align: center;
 		padding-top: 10px;
 		transition: all .4s ease-in-out;    
   }	
 		.box:hover {
-			background: #E1CFC2;
+			background: #e7e6e5;
 			cursor: pointer;
 		}
 		
