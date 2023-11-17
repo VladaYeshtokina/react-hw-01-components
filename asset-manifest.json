@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/css/main.7acaea2f.css",
-    "main.js": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.bac16bea.js",
+    "main.js": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.dc12a39b.js",
     "index.html": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/index.html",
     "main.7acaea2f.css.map": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/css/main.7acaea2f.css.map",
-    "main.bac16bea.js.map": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.bac16bea.js.map"
+    "main.dc12a39b.js.map": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.dc12a39b.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.bac16bea.js"
+    "static/js/main.dc12a39b.js"
   ]
 }
