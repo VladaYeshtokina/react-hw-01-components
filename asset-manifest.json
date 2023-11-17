@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/VladaYeshtokina/react-hw-01-components/static/css/main.f4509734.css",
-    "main.js": "/VladaYeshtokina/react-hw-01-components/static/js/main.66d3da8a.js",
-    "index.html": "/VladaYeshtokina/react-hw-01-components/index.html",
-    "main.f4509734.css.map": "/VladaYeshtokina/react-hw-01-components/static/css/main.f4509734.css.map",
-    "main.66d3da8a.js.map": "/VladaYeshtokina/react-hw-01-components/static/js/main.66d3da8a.js.map"
+    "main.css": "/react-hw-01-components/static/css/main.f4509734.css",
+    "main.js": "/react-hw-01-components/static/js/main.e013d0bb.js",
+    "index.html": "/react-hw-01-components/index.html",
+    "main.f4509734.css.map": "/react-hw-01-components/static/css/main.f4509734.css.map",
+    "main.e013d0bb.js.map": "/react-hw-01-components/static/js/main.e013d0bb.js.map"
   },
   "entrypoints": [
     "static/css/main.f4509734.css",
-    "static/js/main.66d3da8a.js"
+    "static/js/main.e013d0bb.js"
   ]
 }
