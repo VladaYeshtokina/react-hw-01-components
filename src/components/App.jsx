@@ -15,11 +15,11 @@ import transactions from 'components/Transactions/transactions.json';
 
 export const App = () => {
   return (
-    <StyleSheetManager
-      shouldForwardProp={isPropValid}
-      disableVendorPrefixes={false}
-    >
-      <div>
+    <>
+      <StyleSheetManager
+        shouldForwardProp={isPropValid}
+        disableVendorPrefixes={false}
+      >
         <Profile
           username={user.username}
           tag={user.tag}
@@ -30,7 +30,7 @@ export const App = () => {
         <Statistics title="Upload stats" stats={data} />
         <FriendList friends={friends} />
         <TransactionHistory transactions={transactions} />
-      </div>
-    </StyleSheetManager>
+      </StyleSheetManager>
+    </>
   );
 };
