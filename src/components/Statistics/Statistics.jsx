@@ -1,26 +1,32 @@
 import PropTypes from 'prop-types';
-import css from 'components/Statistics/Statistics.module.css';
-import { icon } from '../../utils'
+import { statsIcon } from 'utils';
+import {
+  SectionStats,
+  Title,
+  List,
+  Item,
+  Percentage,
+  Icon,
+} from 'components/Statistics/Statistics.styled';
 
 
 
 export const Statistics = ({ title, stats }) => {    
   return (
-    <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
-      <ul className={css.statList}>
-        {stats.map(({ id, label, percentage }, idx) => {
-          const currentIcon = icon(idx);
+    <SectionStats>
+      <Title>{title}</Title>
+      <List>
+        {stats.map(({ id, percentage }, idx) => {
+          const currentIcon = statsIcon(idx);
           return (
-            <li className={css.item} key={id}>
-              {currentIcon}
-              {/* <span className={css.label}>{label}</span> */}
-              <span className={css.percentage}>{percentage}%</span>
-            </li>
+            <Item key={id}>
+              <Icon>{currentIcon}</Icon>
+              <Percentage>{percentage}%</Percentage>
+            </Item>
           );
         })}
-      </ul>
-    </section>
+      </List>
+    </SectionStats>
   );
 }
 

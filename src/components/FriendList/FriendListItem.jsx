@@ -1,44 +1,17 @@
 import PropTypes from 'prop-types';
-import { CiCircleCheck, CiCircleMinus } from 'react-icons/ci';
-import css from 'components/FriendList/FriendList.module.css';
+import {friendStatus} from 'utils'
+import { Item, Avatar, Name} from 'components/FriendList/FriendList.styled';
 
 export const FriendListItem = ({ status, avatar, name }) => {
-  
+  const icons = friendStatus(status);
   return (
-    
-    //   <li className={css.item}>
-    //     {!status ? (
-    //       <span>
-    //         <CiCircleMinus size="30" className={css.offline} />
-    //       </span>
-    //     ) : (
-    //       <span>
-    //         <CiCircleCheck size="30" className={css.online} />
-    //       </span>
-    //     )}
-    //     <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-    //     <p className={css.name}>{name}</p>
-    // </li>
-    
-(!status) ? (<li className={css.itemIsOffline}>        
-          <span>
-            <CiCircleMinus size="30" className={css.offline} />
-          </span>        
-        <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-        <p className={css.name}>{name}</p>
-    </li>) : (<li className={css.itemIsOnline}>        
-          <span>
-            <CiCircleCheck size="30" className={css.online} />
-          </span>        
-        <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-        <p className={css.name}>{name}</p>
-    </li>) 
-
-
-
-    
+    <Item $status={status}>
+      <span>{icons}</span>
+      <Avatar src={avatar} alt="User avatar"/>
+      <Name>{name}</Name>
+    </Item>
   );
-}
+};
 
 FriendListItem.propTypes = {  
   status: PropTypes.bool,

@@ -2,7 +2,18 @@ import PropTypes from 'prop-types';
 import { AiFillLike } from 'react-icons/ai';
 import { RiUserFollowFill } from 'react-icons/ri';
 import { MdReviews } from 'react-icons/md';
-import css from 'components/Profile/Profile.module.css';
+import { iconSize } from 'constans';
+import {
+  ProfileCard,
+  Descr,
+  Name,
+  Avatar,
+  InfoList,
+  Item,
+  Label,
+  Quantity,
+} from 'components/Profile/Profile.styled';
+
 
 export const Profile = (props) => {
   const {
@@ -13,32 +24,32 @@ export const Profile = (props) => {
     stats: { followers, views, likes },
   } = props;
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <ProfileCard>
+      <Descr>
+        <Avatar src={avatar} alt="User avatar"/>
+        <Name>{username}</Name>
+        <p>@{tag}</p>
+        <p>{location}</p>
+      </Descr>
 
-      <ul className={css.stats}>
-        <li className={css.box}>
-          <RiUserFollowFill />
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li className={css.box}>
-          <MdReviews />
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li className={css.box}>
-          <AiFillLike />
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <InfoList>
+        <Item>
+          <RiUserFollowFill size={iconSize.sm} />
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
+        </Item>
+        <Item>
+          <MdReviews size={iconSize.sm} />
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
+        </Item>
+        <Item>
+          <AiFillLike size={iconSize.sm} />
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
+        </Item>
+      </InfoList>
+    </ProfileCard>
   );
 }
 

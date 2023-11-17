@@ -3,7 +3,7 @@ import {FriendListItem} from 'components/FriendList/FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <ul>
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
