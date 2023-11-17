@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/css/main.e67cf65b.css",
-    "main.js": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.8f40067b.js",
+    "main.css": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/css/main.7acaea2f.css",
+    "main.js": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.bac16bea.js",
     "index.html": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/index.html",
-    "main.e67cf65b.css.map": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/css/main.e67cf65b.css.map",
-    "main.8f40067b.js.map": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.8f40067b.js.map"
+    "main.7acaea2f.css.map": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/css/main.7acaea2f.css.map",
+    "main.bac16bea.js.map": "/VladaYeshtokina/react-hw-01-componentsnpm%20i/static/js/main.bac16bea.js.map"
   },
   "entrypoints": [
-    "static/css/main.e67cf65b.css",
-    "static/js/main.8f40067b.js"
+    "static/css/main.7acaea2f.css",
+    "static/js/main.bac16bea.js"
   ]
 }
